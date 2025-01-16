@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StatusDownloader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dark">Dark</string>
+    <string name="do_you_like_status_saver">Do You like \nstatus Saver?</string>
+    <string name="textNo">We are working hard for a better \nuser experience.\nWe\'d greatly appreciate if your can \nrate us</string>
+    <string name="describe_the_issue_at_least_20_ncharacters">Describe the issue (at least 20 \ncharacters)</string>
+</resources>

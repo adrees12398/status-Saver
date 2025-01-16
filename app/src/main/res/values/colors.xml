@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appColor">#192533</color>
+    <color name="appContainerColor">#111822</color>
+    <color name="shimmarColor">#605F5F</color>
+    <color name="colorAccent">#EBEBEB</color>
+    <color name="colorPrimary">#E2AB1B</color>
+    <color name="Premium_band">#0D1CA4</color>
+    <color name="your_color">#A49594</color>
+
+</resources>

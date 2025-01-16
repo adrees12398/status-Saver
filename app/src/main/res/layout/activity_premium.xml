@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".PremiumActivity">
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="12dp"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/shimmarColor" />
+
+    <ImageView
+        android:id="@+id/ribbon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginVertical="18dp"
+        android:src="@drawable/ribbon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cross"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/start_like_a_pro"
+        style="@style/textHeading"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:text="Start Like a Pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ribbon" />
+
+    <TextView
+        android:id="@+id/unlock_all_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="1dp"
+        android:text="Unlock All Feature"
+        android:textColor="@color/shimmarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_like_a_pro" />
+
+    <TextView
+        android:id="@+id/basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginVertical="28dp"
+        android:text="Basic"
+        android:textColor="@color/shimmarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unlock_all_feature" />
+
+    <TextView
+        android:id="@+id/Primium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:text="Premium"
+        android:textColor="@color/shimmarColor"
+        app:layout_constraintBottom_toBottomOf="@id/basic"
+        app:layout_constraintEnd_toStartOf="@id/basic"
+        app:layout_constraintTop_toTopOf="@id/basic" />
+
+    <ImageView
+        android:id="@+id/statusband"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="24dp"
+        android:src="@drawable/status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basic"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/status_saver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:text="Status Saver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/statusband"
+        app:layout_constraintStart_toEndOf="@id/statusband"
+        app:layout_constraintTop_toTopOf="@id/statusband" />
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/basic"
+        app:layout_constraintStart_toStartOf="@id/basic"
+        app:layout_constraintTop_toBottomOf="@id/basic"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/tick2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/Primium"
+        app:layout_constraintStart_toStartOf="@id/Primium"
+        app:layout_constraintTop_toBottomOf="@id/Primium"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="24dp"
+        android:src="@drawable/share"
+        app:layout_constraintEnd_toEndOf="@id/statusband"
+        app:layout_constraintStart_toStartOf="@id/statusband"
+        app:layout_constraintTop_toBottomOf="@id/statusband"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/ShareVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="Share Videos"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/status_saver"
+        app:layout_constraintStart_toStartOf="@id/status_saver"
+        app:layout_constraintTop_toBottomOf="@id/status_saver" />
+
+    <ImageView
+        android:id="@+id/tick3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick"
+        app:layout_constraintStart_toStartOf="@id/tick"
+        app:layout_constraintTop_toBottomOf="@id/tick"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/tick4"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick2"
+        app:layout_constraintStart_toStartOf="@id/tick2"
+        app:layout_constraintTop_toBottomOf="@id/tick2"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/darkmode"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="24dp"
+        android:src="@drawable/darkmodeblue"
+        app:layout_constraintEnd_toEndOf="@id/share"
+        app:layout_constraintStart_toStartOf="@id/share"
+        app:layout_constraintTop_toBottomOf="@id/share"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/darkmodetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="26dp"
+        android:text="Dark Mode"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/ShareVideo"
+        app:layout_constraintStart_toStartOf="@id/ShareVideo"
+        app:layout_constraintTop_toBottomOf="@id/ShareVideo" />
+
+    <ImageView
+        android:id="@+id/tick5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick3"
+        app:layout_constraintStart_toStartOf="@id/tick3"
+        app:layout_constraintTop_toBottomOf="@id/tick3"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/tick6"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick4"
+        app:layout_constraintStart_toStartOf="@id/tick4"
+        app:layout_constraintTop_toBottomOf="@id/tick4"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/VIPcustomer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="24dp"
+        android:src="@drawable/headphone"
+        app:layout_constraintEnd_toEndOf="@id/darkmode"
+        app:layout_constraintStart_toStartOf="@id/darkmode"
+        app:layout_constraintTop_toBottomOf="@id/darkmode"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/VIPCustomerSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+
+        android:gravity="start|center"
+        android:text="VIP Customer Support"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/darkmodetext"
+        app:layout_constraintTop_toBottomOf="@id/darkmodetext" />
+
+    <ImageView
+        android:id="@+id/tick7"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick5"
+        app:layout_constraintStart_toStartOf="@id/tick5"
+        app:layout_constraintTop_toBottomOf="@id/tick5"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/tick8"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick6"
+        app:layout_constraintStart_toStartOf="@id/tick6"
+        app:layout_constraintTop_toBottomOf="@id/tick6"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/removeadds"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="24dp"
+        android:src="@drawable/video"
+        app:layout_constraintEnd_toEndOf="@id/VIPcustomer"
+        app:layout_constraintStart_toStartOf="@id/VIPcustomer"
+        app:layout_constraintTop_toBottomOf="@id/VIPcustomer"
+        app:tint="@color/Premium_band" />
+
+    <TextView
+        android:id="@+id/Removeaddstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginTop="28dp"
+        android:gravity="start|center"
+        android:text="Remove Adds"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/VIPCustomerSupport"
+        app:layout_constraintTop_toBottomOf="@id/VIPCustomerSupport" />
+
+    <ImageView
+        android:id="@+id/tick9"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="28dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick7"
+        app:layout_constraintStart_toStartOf="@id/tick7"
+        app:layout_constraintTop_toBottomOf="@id/tick7"
+        app:tint="@color/Premium_band" />
+
+    <ImageView
+        android:id="@+id/tick10"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginVertical="30dp"
+        android:src="@drawable/checkmarkblue"
+        app:layout_constraintEnd_toEndOf="@id/tick8"
+        app:layout_constraintStart_toStartOf="@id/tick8"
+        app:layout_constraintTop_toBottomOf="@id/tick8"
+        app:tint="@color/Premium_band" />
+    <TextView
+        android:id="@+id/Rs2500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="1dp"
+        android:textColor="@color/shimmarColor"
+        app:layout_constraintBottom_toTopOf="@id/buttonfreetrial"
+        android:text="Rs 2,550.00/week after FREE 3-days trial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="12dp"
+        android:text="START FREE TRIAL"
+        android:paddingVertical="16dp"
+        android:textColor="@color/white"
+        android:id="@+id/buttonfreetrial"
+        android:backgroundTint="#0C176B"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/SubscriptionwillautorenewCancelanytime"/>
+
+    <TextView
+        android:id="@+id/SubscriptionwillautorenewCancelanytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/shimmarColor"
+        android:text="Subscription will auto-renew. Cancel anytime."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
