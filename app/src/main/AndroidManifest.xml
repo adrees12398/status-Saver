@@ -27,6 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StatusDownloader"
         tools:targetApi="31">
+
         <activity
             android:name=".VideoPlaylerActivity"
             android:exported="false" />
